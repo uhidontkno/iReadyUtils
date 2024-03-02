@@ -77,7 +77,8 @@ div[type="streak"] {
 .css-thfwq5-Subheading {color:#ccc;}
 rect[fill="#eeeeee"] {fill:#444;}
 *[fill="#ffffff"], *[fill="white"], *[fill="#fff"] {fill:#111;}
-*[fill="#505050"] {fill:#ccc;}
+path[fill="#505050"] {fill:#ccc !important;}
+*[opacity="0.15"] {opacity:0.4;}
 .css-xaul9o-gridTemplate-ButtonLayoutCss {
     color: white;
 }
@@ -111,4 +112,13 @@ img:hover {
 .bg-success img {
     border-radius: 0;
 }
+
+/* lesson completed */
+.css-179uhv7-Layout-CompletedWorkTableHeader, .css-am03px-HighlightableRow {background:#222;color:#eee;}
+.css-1v0qkg6-ActivityDomain {color:#eee;}
+.css-1xuql0d-ActivityTitle {color:#999;}
+.css-1ar14rb-MyProgressGrayCheck path {stroke:rgb(4, 137, 65)}
+.css-1bg6ijh-DiagOutcome {color:#eee;}
+.css-1ducm02-CompletionDate {color:#aaa;}
+.css-e4ln7q-SelectTrigger, div[role="menuitem"] {background:#000 !important;}
 }
