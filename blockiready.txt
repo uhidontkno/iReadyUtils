@@ -1,0 +1,8 @@
+# HOSTS file to block iReady
+0.0.0.0 i-ready.com
+0.0.0.0 cdn.i-ready.com
+0.0.0.0 login.i-ready.com
+0.0.0.0 g.i-ready.com
+0.0.0.0 *.i-ready.com
+0.0.0.0 cainc.com
+0.0.0.0 curriculumassociates.com
