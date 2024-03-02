@@ -145,4 +145,13 @@ p.modalBody {color:#eee;}
 span.text {color:#eee;}
 .rc-stem.postit-note.rc3-5::after {display:none;}
 
+/* login page */
+#loginHeader {background-color:#000; }
+.css-17b4a38-Centered-HORIZONTAL-VERTICAL-WRAPPER-LoginCardWrapper, .css-1i9ug6f-PADDING, .css-5uqngt-Centered-HORIZONTAL-VERTICAL-WRAPPER-LoginCardWrapper, .css-1i9ug6f-PADDING {background:#2f2f5f}
+.css-1dfhar7-CARD_HEADER, .css-1jg2fgv-CardHeader {background:#111;}
+path[fill="#231f21"] {fill:#fff;}
+.css-wtd3is-CARD_BODY,.css-12w87xd-Centered-HORIZONTAL-BODY_BACKGROUND, .css-22aqxu-SECTION-TEACHER_SECTION,.css-184088g-SECTION-STUDENT_SECTION {background:#222;color:#bbb !important;}
+label, .css-d9zduq-TEXT_8-TEXT {color:#bbb !important;}
+input {font-family:monospace; background-color:#333 !important; color:white !important; }
+footer, .css-a9y1ow-Description-HEADER_3, .css-3te9ln-FinePrint-TEXT_4 .ey3citj0 {background:#0f0f0f !important; color:#bbb !important;}
 }
