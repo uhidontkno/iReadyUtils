@@ -1,4 +1,4 @@
-@-moz-document domain("login.i-ready.com") {
+@-moz-document domain("i-ready.com") {
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 * {
@@ -9,6 +9,7 @@
 :root {
     --cauliflower-color-white: #222 !important;
     --cauliflower-color-black: #fff;
+    --ifabric-color-white: #000;
 }
 
 body,
@@ -24,6 +25,10 @@ html {
 }
 
 /* texts & buttons */
+
+#lesson-splash-continue-button-button {background:rgb(71, 234, 109); border-radius:939392px;}
+#lesson-splash-continue-button-button:hover {background:rgb(41,194,69)}
+
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {color:#eee;}
 .css-1kh7anh-createComponent-withSubjectPickerStyles-HEADER_9 .h1 {color:#eee;}
 .css-mkz9o1-gridTemplate-ButtonLayoutCss {color:#bbb;font-weight:400;}
@@ -129,5 +134,8 @@ img:hover {
 .css-mh682m-createComponent-GameCard {background:#000;}
 
 /* lesson */
-*[fill="#eeeeee"] {background:#111;}
+.baseDialog {background:#000;}
+p.modalBody {color:#eee;}
+.closeModalImage {color:#fff;}
+#lesson,.header__title,#bottom-bar-container {background:#111;color:#ccc;}
 }
