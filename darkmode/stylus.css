@@ -137,5 +137,12 @@ img:hover {
 .baseDialog {background:#000;}
 p.modalBody {color:#eee;}
 .closeModalImage {color:#fff;}
-#lesson,.header__title,#bottom-bar-container {background:#111;color:#ccc;}
+#lesson,.header__title,#bottom-bar-container,.ql-editor,.cover-audio-button,.dialog-box,.lessonModalOverlay.overlay.bk-overlay .dialog-box,.close,#passage {background:#111;color:#ccc;}
+.activity-void {background:#222;}
+.rc-stem.postit-note.rc3-5::before {background:#9c927c}
+#go-t2-s1 .slider-panel.activity {background:#0d234d;}
+#go-t2-s1 .drawer-panel-container.activity {background:#223f63;}
+span.text {color:#eee;}
+.rc-stem.postit-note.rc3-5::after {display:none;}
+
 }
