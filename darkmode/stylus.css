@@ -24,6 +24,9 @@ html {
 }
 
 /* texts & buttons */
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {color:#eee;}
+.css-1kh7anh-createComponent-withSubjectPickerStyles-HEADER_9 .h1 {color:#eee;}
+.css-mkz9o1-gridTemplate-ButtonLayoutCss {color:#bbb;font-weight:400;}
 #coin-amount {
     color: #eee;
     font-weight: 600;
@@ -54,7 +57,7 @@ html {
 }
 div[type="stats"],
 div[type="streak"] {
-    background-color: #000;
+    background-color: #0f0f0f;
     color: white;
 }
 #streakCountId,
@@ -114,11 +117,17 @@ img:hover {
 }
 
 /* lesson completed */
-.css-179uhv7-Layout-CompletedWorkTableHeader, .css-am03px-HighlightableRow {background:#222;color:#eee;}
+.css-179uhv7-Layout-CompletedWorkTableHeader, .css-am03px-HighlightableRow {background:#0f0f0f;color:#eee;}
 .css-1v0qkg6-ActivityDomain {color:#eee;}
 .css-1xuql0d-ActivityTitle {color:#999;}
 .css-1ar14rb-MyProgressGrayCheck path {stroke:rgb(4, 137, 65)}
 .css-1bg6ijh-DiagOutcome {color:#eee;}
 .css-1ducm02-CompletionDate {color:#aaa;}
 .css-e4ln7q-SelectTrigger, div[role="menuitem"] {background:#000 !important;}
+
+/* games */
+.css-mh682m-createComponent-GameCard {background:#000;}
+
+/* lesson */
+*[fill="#eeeeee"] {background:#111;}
 }
