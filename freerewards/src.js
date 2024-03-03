@@ -3,7 +3,30 @@
  * Author:  rare1k
  * License: GPL-3.0
 */
+function openr(url,target) {
+let nt = window.open("about:blank",target);
 
+    nt.document.write(`
+<html>
+<head>
+<title>Rewards, i-Ready</title>
+<style>body,html {margin:0;background:#000;}</style>
+</head>
+<body>
+<script nonce="3DMEfW0/JKLF6c7dRlVQjBc/6K3atbt1A5/Azqgn"> history.pushState({}, 'Rewards, i-Ready', 'https://login.i-ready.com/student/dashboard/home');
+
+setInterval(()=>{document.title = "Rewards, i-Ready"},200)
+</script>
+<div style="margin:auto;background:#0;display:flex;align-items:center;justify-content:center;width:100%;min-width:100%;height:100%">
+<iframe src="${url}" style="height:100%;max-width:100%;aspect-ratio:4 / 3;border:none;"></iframe>
+</div>
+</body>
+</html>
+`);
+
+
+
+}
 function Container() {
     try {
     if (document.querySelector('._NotReady_RewardsOverlay')) {return document.querySelector('._NotReady_RewardsOverlay')}
@@ -33,12 +56,12 @@ function HandleOnClick(gOverlay) {
     let wizardPinball = gOverlay.querySelector(".wizardPinball")
     let digSite = gOverlay.querySelector(".digSite")
     if (!begooped || !catStacker || !pathSpinners || !galaxySprint || !wizardPinball || !digSite) {throw new Error("Game overlays were not initalized.")}
-    begooped.addEventListener("click",() => {window.open("https://cdn.i-ready.com/instruction/game-begooped/1.3.x/2/", '_blank');})
-    catStacker.addEventListener("click",() => {window.open("https://cdn.i-ready.com/instruction/game-catstacker/1.6.x/2/", '_blank');})
-    pathSpinners.addEventListener("click",() => {window.open("https://cdn.i-ready.com/instruction/game-hpr/1.4.x/2/", '_blank');})
-    galaxySprint.addEventListener("click",() => {window.open("https://cdn.i-ready.com/instruction/reward-games/v1.3.x/2/game-lanerunner/", '_blank');})
-    wizardPinball.addEventListener("click",() => {window.open("https://cdn.i-ready.com/instruction/reward-games/v1.3.x/2/game-bubbles/", '_blank');})
-    digSite.addEventListener("click",() => {window.open("https://cdn.i-ready.com/instruction/reward-games/v1.3.x/2/game-minedigger/", '_blank');})
+    begooped.addEventListener("click",() => {openr("https://cdn.i-ready.com/instruction/game-begooped/1.3.x/2/", '_blank');})
+    catStacker.addEventListener("click",() => {openr("https://cdn.i-ready.com/instruction/game-catstacker/1.6.x/2/", '_blank');})
+    pathSpinners.addEventListener("click",() => {openr("https://cdn.i-ready.com/instruction/game-hpr/1.4.x/2/", '_blank');})
+    galaxySprint.addEventListener("click",() => {openr("https://cdn.i-ready.com/instruction/reward-games/v1.3.x/2/game-lanerunner/", '_blank');})
+    wizardPinball.addEventListener("click",() => {openr("https://cdn.i-ready.com/instruction/reward-games/v1.3.x/2/game-bubbles/", '_blank');})
+    digSite.addEventListener("click",() => {openr("https://cdn.i-ready.com/instruction/reward-games/v1.3.x/2/game-minedigger/", '_blank');})
 }
 
 gOverlay = Container()
