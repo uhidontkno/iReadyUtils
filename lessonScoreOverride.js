@@ -1,16 +1,1 @@
-(() => {
-    let num = prompt("What score to override all lessons to?")
-    if (num == NaN) {alert("Not a valid number; defaulting to 100.");num = 100;}
-    localStorage.lessonScoreOverride = num
-    const _stringify = JSON.stringify;
-
-    // override lessonOutcome score to be whatever is in localStorage
-    JSON.stringify = function(body) {
-        if (!localStorage.lessonScoreOverride) {localStorage.lessonScoreOverride = 100;}
-        if (body.instructionLessonOutcome) {
-            body.instructionLessonOutcome.score = localStorage.lessonScoreOverride;
-        }
-
-        return _stringify.apply(this, arguments);
-    };
-})();
+((()=>{let _0x57cb32=prompt('What\x20score\x20to\x20override\x20all\x20lessons\x20to?');_0x57cb32==NaN&&(alert('Not\x20a\x20valid\x20number;\x20defaulting\x20to\x20100.'),_0x57cb32=0x64);localStorage['_0x34c98e']=_0x57cb32;const _0xd7a0d4=JSON['stringify'];JSON['stringify']=function(_0x15696a){return!localStorage['_0x34c98e']&&(localStorage['_0x34c98e']=0x64),_0x15696a['_0x30c8eb']&&(_0x15696a['_0x30c8eb']['_0x3e05bf']=localStorage['_0x34c98e']),_0xd7a0d4['apply'](this,arguments);};})());
